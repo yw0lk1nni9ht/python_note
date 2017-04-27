@@ -1,0 +1,26 @@
+数据库：
+
+列举数据库：mysql-databases
+nmap --script mysql-databases --script-args mysqluser=root,mysqlpass ip
+
+列举MySql变量：mysql-variables
+
+审计MySql密码：mysql-brute
+nmap --script=mysql-brute ip
+
+审计msSql密码：ms-sql-brute
+nmap -p * --script ms-sql-brute --script-args userdb=name.txt,passdb=pass.txt
+
+读取mssql数据：ms-sql-tables
+nmap -p * --script ms-sql-tables --script-args mssql.username=sa,mysql.password=sa ip
+
+msSql执行系统命令：ms-sql-xp-cmdshell
+nmap -p * --scirpt ms-sql-xp-cmdshell --script-args mssql.username=sa,mssql.password=sa,ms-sql-xp-cmdshell.cmd="ipconfig" ip
+
+审计oracle密码：oracle-brute
+
+-----------------------------------------------------------------------------
+
+暴力破解FTP：nmap --script ftp-brute --script-args userdb=user.txt,passdb=pass.txt -p * ip
+
+破解VM nmap -p * --script vmauthd-brute 192.168.*.*

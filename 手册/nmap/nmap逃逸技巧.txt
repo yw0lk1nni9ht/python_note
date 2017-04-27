@@ -1,0 +1,25 @@
+报文分段：-f
+
+
+指定偏移大小:--mtu
+nmap --mtu 8/16/24... ip
+8的倍数
+
+
+IP欺骗：-D
+nmap -D ip1,ip2,ip3 ip
+     -D RND:11
+但在版本检测时诱饵是无效的
+
+
+源地址欺骗：-sI
+nmap -sI www.0day.co:80 ip
+
+
+源端口欺骗：--source-port port
+
+指定发包长度：--data-length length
+
+目标主机随机排序:--randomize-hosts
+
+MAC地址欺骗：--spoof-mac

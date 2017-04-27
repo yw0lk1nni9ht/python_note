@@ -1,0 +1,31 @@
+
+Ping扫描:namp -sP ip
+
+无Ping扫描：nmap -P0 ip
+
+TCP SYN Ping扫描：nmap -PA ip
+
+TCP ACK Ping扫描：nmap -PU ip
+
+UDP Ping 扫描：nmap -PU ip
+
+ICMP Ping Types扫描：-PE；-PP；-PM；
+
+ARP Ping 扫描：nmap -PR ip 
+
+-------------------------------------------
+列表扫描：namp -sL ip/24		 
+(默认解释域名，一下2个参数是与这个搭配.)  
+					  
+禁止DNS反向解析：nmap -n ip  		  
+ 					  
+反向解释域名：nmap -R ip		  
+--------------------------------------------
+
+使用系统域名解析器：nmap --system-dns ip1 ip2
+
+扫描ipv6地址：-6
+
+路由跟踪：--traceroute
+
+SCTP INIT　Ping 扫描:-PY

@@ -1,0 +1,26 @@
+Windows:
+账号情况net user
+
+端口开放情况netstat -ano
+
+操作系统：ver
+
+补丁:systeminfo
+
+进程情况：taskilist /svc
+
+杀死进程：taskkill -PID
+          taskkill /im qq.exe /f
+
+添加用户：net user cracer cracer /add
+
+添加到管理组：net localgroup administrators cracer /add
+
+查看当前操作用户：whoami
+
+Linux:
+ls -al
+
+查看操作路径pwd
+
+查看内核版本uname -a

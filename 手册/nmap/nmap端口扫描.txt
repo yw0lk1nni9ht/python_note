@@ -1,0 +1,26 @@
+
+时序选项：-T 0-5
+
+端口扫描顺序：-p
+
+TCP SYN扫描：-sS
+
+TCP连接扫描：-sT
+
+UDP扫描：-sU
+
+隐蔽扫描：-sN;-sF;-sX
+
+TCP ACK扫描：-sA
+
+TCP窗口扫描：-sW
+
+TCP Maimon扫描：-sM
+
+自定义TCP扫描：--scanflags
+
+空闲扫描：-sI
+
+IP协议扫描：-sO
+
+FTP Bounce扫描：-b

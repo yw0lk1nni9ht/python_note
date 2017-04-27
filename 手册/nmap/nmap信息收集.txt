@@ -1,0 +1,12 @@
+ip信息收集：nmap --script ip-geolocation-* www.jsa90.com
+
+whois：--script whois www.jsa90.com
+
+ip反查：nmap --script hostmap-ip2hosts www.jsa90.com
+
+DNS信息搜查：--script dns-brute  www.
+
+检索系统信息：--script membase-http-info
+
+系统漏洞扫描：--script smb-check-vulns.nse ip
+
